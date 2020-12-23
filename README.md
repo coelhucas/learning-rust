@@ -28,6 +28,7 @@ And to end this section, this project is public just to share my learning proces
   - [ ] sounds
   - [ ] simple math library (my own, without any complex crate)
   - [ ] basic AABB collisions
+- [ ] start contributing (as I get confidence to that) in existing crates and projects (not necessarily gamedev related)
 
 
 ### References
