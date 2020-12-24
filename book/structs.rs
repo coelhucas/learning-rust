@@ -17,6 +17,12 @@ impl Vector2 {
 
         v
     }
+
+    // Example of associate function, not really useful in this specific case.
+    fn zero() -> Vector2 {
+        let v = Vector2 { x: 0.0, y: 0.0 };
+        v
+    }
 }
 
 fn main() {
@@ -24,6 +30,7 @@ fn main() {
     let unit_vec = point_a.normalized();
     println!("Magnitude of a is ~{}", point_a.magnitude());
     println!("{:#?} normalized is {:#?}", point_a, unit_vec);
+    println!("Vector2 ZERO = {:#?}", Vector2::zero());
 
     // Proving that the result is right:
     println!("{}", unit_vec.magnitude());
