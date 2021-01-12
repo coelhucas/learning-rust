@@ -7,12 +7,13 @@ fn main() {
     println!("Vec median: {}", median(&mut vec));
 }
 
-fn mean(vec: &Vec<i32>) -> i32 {
-    let mut sum = 0;
-    let length = vec.len() as i32;
+fn mean(vec: &Vec<i32>) -> f32 {
+    let mut sum = 0.0;
+    let length = vec.len() as f32;
 
     for value in vec.iter() {
-        sum += value;
+        let fvalue = *value as f32;
+        sum += fvalue;
     }
 
     sum / length
