@@ -57,8 +57,6 @@ fn add_employee(data: &mut HashMap<String, Vec<String>>, parameters: &Vec<&str>)
     let name: String = String::from(parameters[1]);
     let department: String = String::from(parameters[3].trim_end_matches("\n"));
 
-    println!("Name: {}", name);
-
     if data.contains_key(&department) {
         let result = &mut data.get_mut(&department);
 
