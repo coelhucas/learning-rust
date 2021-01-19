@@ -22,27 +22,17 @@ fn main() {
         io::stdin().read_line(&mut input).expect("Invalid input");
         let arguments: Vec<&str> = input.split(' ').collect();
         let command: &str = &arguments[0].trim_end_matches("\n");
+        let command = command.to_lowercase();
 
-        if command.to_lowercase() == "add" {
-            add_employee(&mut data, &arguments);
-            input.clear();
-            continue;
+        match command.as_str() {
+            "add" => add_employee(&mut data, &arguments),
+            "list" => list_employees(&data),
+            "quit" => break,
+            _ => println!("Invalid command."),
         }
-
-        if command.to_lowercase() == "list" {
-            list_employees(&data);
-            input.clear();
-            continue;
-        }
-
-        if command.to_lowercase() == "quit" {
-            println!("User exited.");
-            break;
-        }
-
-        println!("Invalid command.");
 
         input.clear();
+        continue;
     }
 }
 
@@ -57,17 +47,10 @@ fn add_employee(data: &mut HashMap<String, Vec<String>>, parameters: &Vec<&str>)
     let name: String = String::from(parameters[1]);
     let department: String = String::from(parameters[3].trim_end_matches("\n"));
 
-    if data.contains_key(&department) {
-        let result = &mut data.get_mut(&department);
-
-        match result {
-            Some(vec) => {
-                println!("Inserted {}", &name);
-                vec.insert(vec.len() - 1, name);
-                vec.sort();
-            }
-            None => println!("Tem uma cobra na minha bota!"),
-        }
+    if let Some(vec) = data.get_mut(&department) {
+        println!("Inserted {}", &name);
+        vec.insert(vec.len() - 1, name);
+        vec.sort();
     } else {
         println!("Inserted {}", &name);
         data.entry(department).or_insert(vec![name]);
