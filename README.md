@@ -19,8 +19,12 @@ And to end this section, this project is public just to share my learning proces
 - [ ] [rustc book](https://doc.rust-lang.org/rustc/index.html)
 - [ ] [rustdoc book](https://doc.rust-lang.org/rustdoc/index.html);
 - [ ] an overall of contents in the contents of the repo linked at references;
+- [ ] [rustnomicon](https://doc.rust-lang.org/nomicon/index.html)
 
 *hands on*
+- [x] the book [guessing game](book/guessing_game)
+- [x] the book [minigrep](book/minigrep)
+- [ ] the book minimal server
 - [ ] make a simple snake-like game project using either [rust-sdl2](https://github.com/Rust-SDL2/rust-sdl2) or [amethyst](https://amethyst.rs/), based on how difficult it gets to achieve;
 - [ ] [vulkan-tutorial](https://vulkan-tutorial.com/) to learn by studying binding vulkan api directly on rust
 - [ ] create a small framework to help making game prototypes, with the basics:
