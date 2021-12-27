@@ -12,7 +12,7 @@ And to end this section, this project is public just to share my learning proces
 
 ### Goals
 
-*studying*
+*books*
 - [ ] Finish [the official book](https://doc.rust-lang.org/book/) in my spare time;
 - [ ] Study the [standard library](https://doc.rust-lang.org/std/index.html);
 - [ ] Take some closer look into [cargo book](https://doc.rust-lang.org/cargo/index.html);
@@ -26,13 +26,14 @@ And to end this section, this project is public just to share my learning proces
 - [x] the book [minigrep](book/minigrep)
 - [ ] the book minimal server
 - [ ] make a simple snake-like game project using either [rust-sdl2](https://github.com/Rust-SDL2/rust-sdl2) or [amethyst](https://amethyst.rs/), based on how difficult it gets to achieve;
-- [ ] [vulkan-tutorial](https://vulkan-tutorial.com/) to learn by studying binding vulkan api directly on rust
+- [ ] start contributing (as I get confidence to that) in existing crates and projects
+
+*maybe never*
 - [ ] create a small framework to help making game prototypes, with the basics:
   - [ ] graphics rendering
   - [ ] sounds
   - [ ] simple math library (my own, without any complex crate)
   - [ ] basic AABB collisions
-- [ ] start contributing (as I get confidence to that) in existing crates and projects (not necessarily gamedev related)
 
 
 ### References
