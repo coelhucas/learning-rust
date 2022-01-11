@@ -27,7 +27,7 @@ And to end this section, this project is public just to share my learning proces
 *hands on*
 - [x] the book [guessing game](book/guessing_game)
 - [x] the book [minigrep](book/minigrep)
-- [x] the book minimal server
+- [x] the book [minimal server](book/web-server)
 - [ ] start contributing (as I get confidence to that) in existing crates and projects
 
 *maybe never*
